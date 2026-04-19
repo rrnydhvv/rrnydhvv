@@ -92,6 +92,7 @@ def update_readme():
 
         achievements_icon = "assets/Achievement_Wonders_of_the_World.webp"
         progress_header_icon = "assets/Achievement_Challenger_Series_X.webp"
+        general_info_icon = "assets/Genshin_Impact_HoYoLAB.webp"
         abyss_icon = "assets/Achievement_Domains_and_Spiral_Abyss_Series_I.webp"
         theater_icon = f"assets/Imaginarium_Theater_Medal_{theater_icon_index}.webp"
         stygian_icon = f"assets/Icon_Stygian_Onslaught_Medal_{stygian_icon_suffix}.webp"
@@ -106,7 +107,7 @@ def update_readme():
 
   <table align="center">
     <tr>
-      <th>📊 Thông tin chung</th>
+      <th><img src="{general_info_icon}" width="20" height="20" alt="Genshin Impact"> Thông tin chung</th>
       <th><img src="{progress_header_icon}" width="20" height="20" alt="Progress"> Tiến độ thử thách</th>
     </tr>
     <tr>

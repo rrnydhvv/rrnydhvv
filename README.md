@@ -6,7 +6,7 @@
 
   <table align="center">
     <tr>
-      <th>📊 Thông tin chung</th>
+      <th><img src="assets/Genshin_Impact_HoYoLAB.webp" width="20" height="20" alt="Genshin Impact"> Thông tin chung</th>
       <th><img src="assets/Achievement_Challenger_Series_X.webp" width="20" height="20" alt="Progress"> Tiến độ thử thách</th>
     </tr>
     <tr>
@@ -27,6 +27,6 @@
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 02:12 - 20/04/2026</sub></p>
+  <p><sub>Cập nhật: 02:41 - 20/04/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->
