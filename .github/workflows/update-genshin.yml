@@ -1,0 +1,31 @@
+name: Update Genshin Stats
+on:
+  schedule:
+    - cron: '0 0 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Đã cập nhật từ v3 -> v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5 # Đã cập nhật từ v4 -> v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: pip install requests
+        
+      - name: Run update script
+        run: python update_genshin.py
+        
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add README.md
+          git commit -m "Tự động cập nhật chỉ số Genshin (Node.js 24)" || exit 0
+          git push
