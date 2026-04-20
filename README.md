@@ -1,6 +1,6 @@
 <!-- GENSHIN_PROFILE_START -->
 <div align="center">
-  <p><img src="https://enka.network/ui/UI_AvatarIcon_Varka.png" width="120" height="120" alt="Avatar"></p>
+  <p><img src="https://enka.network/ui/UI_AvatarIcon_PlayerGirlCostumeCWXR.png" width="120" height="120" alt="Avatar"></p>
   <h2>🌠 Lumine❤️</h2>
   <p><em>"- Tumaini -"</em></p>
 
@@ -27,6 +27,6 @@
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 02:41 - 20/04/2026</sub></p>
+  <p><sub>Cập nhật: 06:02 - 20/04/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->
