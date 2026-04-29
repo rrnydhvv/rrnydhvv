@@ -23,10 +23,10 @@
     </tr>
     <tr>
       <td><img src="assets/Item_Companionship_EXP.webp" width="24" height="24" alt="Companionship"> <strong>Thân thiết:</strong> ❤️ Max 94</td>
-      <td><img src="assets/Icon_Stygian_Onslaught_Medal_5.webp" width="24" height="24" alt="Stygian Onslaught"> <strong>Ảo Cảnh:</strong> Cấp 5 (⏱️ 214s)</td>
+      <td><img src="assets/Icon_Stygian_Onslaught_Medal_5.webp" width="24" height="24" alt="Stygian Onslaught"> <strong>Ảo Cảnh:</strong> Cấp 5 (⏱️ 210s)</td>
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 03:41 - 28/04/2026</sub></p>
+  <p><sub>Cập nhật: 03:39 - 29/04/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->
