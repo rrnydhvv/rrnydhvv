@@ -19,7 +19,7 @@
     </tr>
     <tr>
       <td><strong>Server:</strong> 🌏 ASIA</td>
-      <td><img src="assets/Imaginarium_Theater_Medal_1.webp" width="24" height="24" alt="Imaginarium Theater"> <strong>Nhà hát:</strong> Màn 0 (0★)</td>
+      <td><img src="assets/Imaginarium_Theater_Medal_5.webp" width="24" height="24" alt="Imaginarium Theater"> <strong>Nhà hát:</strong> Màn 10 (12★)</td>
     </tr>
     <tr>
       <td><img src="assets/Item_Companionship_EXP.webp" width="24" height="24" alt="Companionship"> <strong>Thân thiết:</strong> ❤️ Max 94</td>
@@ -27,6 +27,6 @@
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 03:26 - 02/05/2026</sub></p>
+  <p><sub>Cập nhật: 03:46 - 03/05/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->
