@@ -27,6 +27,6 @@
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 03:33 - 08/05/2026</sub></p>
+  <p><sub>Cập nhật: 03:33 - 09/05/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->
