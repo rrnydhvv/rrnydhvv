@@ -20,7 +20,7 @@ jobs:
         run: pip install requests
         
       - name: Run update script
-        run: python update_genshin.py
+        run: python update_GI.py
         
       - name: Commit and Push changes
         run: |

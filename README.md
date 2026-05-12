@@ -1,6 +1,6 @@
 <!-- GENSHIN_PROFILE_START -->
 <div align="center">
-  <p><img src="https://enka.network/ui/UI_AvatarIcon_Varka.png" width="120" height="120" alt="Avatar"></p>
+  <p><img src="https://enka.network/ui/UI_AvatarIcon_PlayerGirlCostumeCWXR.png" width="120" height="120" alt="Avatar"></p>
   <h2>🌠 Lumine❤️</h2>
   <p><em>"- Tumaini -"</em></p>
 
@@ -23,10 +23,10 @@
     </tr>
     <tr>
       <td><img src="assets/Item_Companionship_EXP.webp" width="24" height="24" alt="Companionship"> <strong>Thân thiết:</strong> ❤️ Max 94</td>
-      <td><img src="assets/Icon_Stygian_Onslaught_Medal_5.webp" width="24" height="24" alt="Stygian Onslaught"> <strong>Ảo Cảnh:</strong> Cấp 5 (⏱️ 214s)</td>
+      <td><img src="assets/Icon_Stygian_Onslaught_Medal_5.webp" width="24" height="24" alt="Stygian Onslaught"> <strong>Ảo Cảnh:</strong> Cấp 5 (⏱️ 210s)</td>
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 02:41 - 20/04/2026</sub></p>
+  <p><sub>Cập nhật: 13:46 - 12/05/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->
