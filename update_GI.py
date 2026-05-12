@@ -3,7 +3,6 @@ import os
 import requests
 import re
 import datetime
-from fontTools.subset import main as subsetter
 
 UID = '826350117'
 
