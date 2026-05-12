@@ -5,6 +5,9 @@
   <p><em>"- Tumaini -"</em></p>
 
   <table align="center">
+    <a href="#">
+      <img src="https://enka.network/ui/UI_NameCardPic_Kzsd_P.png" width="600" alt="Namecard Banner" style="border-radius: 10px;">
+    </a>
     <tr>
       <th><img src="assets/Genshin_Impact_HoYoLAB.webp" width="20" height="20" alt="Genshin Impact"> Thông tin chung</th>
       <th><img src="assets/Achievement_Challenger_Series_X.webp" width="20" height="20" alt="Progress"> Tiến độ thử thách</th>
@@ -27,6 +30,6 @@
     </tr>
   </table>
 
-  <p><sub>Cập nhật: 13:46 - 12/05/2026</sub></p>
+  <p><sub>Cập nhật: 13:56 - 12/05/2026</sub></p>
 </div>
 <!-- GENSHIN_PROFILE_END -->

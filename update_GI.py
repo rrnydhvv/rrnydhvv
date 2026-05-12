@@ -107,6 +107,9 @@ def update_readme():
   <p><em>"{player_data.get('signature', '') or 'Chưa có chữ ký'}"</em></p>
 
   <table align="center">
+    <a href="#">
+      <img src="{player_data['nameCardUrl']}" width="600" alt="Namecard Banner" style="border-radius: 10px;">
+    </a>
     <tr>
       <th><img src="{general_info_icon}" width="20" height="20" alt="Genshin Impact"> Thông tin chung</th>
       <th><img src="{progress_header_icon}" width="20" height="20" alt="Progress"> Tiến độ thử thách</th>
