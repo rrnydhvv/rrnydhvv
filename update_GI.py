@@ -127,7 +127,7 @@ def generate_svg(player_data):
         stygian_icon_suffix = "6a" if player_data["stygianSeconds"] > 180 else "6b"
     else:
         stygian_icon_suffix = str(stygian_icon_index)
-        
+    stygianMode = ['Thường', 'Nâng Cao', 'Khó', 'Hiểm Ác', 'Dũng Cảm', 'Tuyệt Cảnh']
     # Chuyển toàn bộ icon sang Base64
     achievements_icon = get_base64_image("assets/Achievement_Wonders_of_the_World.webp")
     progress_header_icon = get_base64_image("assets/Achievement_Challenger_Series_X.webp")
@@ -220,7 +220,7 @@ def generate_svg(player_data):
         <text x="485" y="390" class="text-base" font-size="16"><tspan font-weight="bold">Nhà hát:</tspan> Màn {player_data['theaterAct']} ({player_data['theaterStars']}★)</text>
 
         <image href="{stygian_icon}" x="450" y="412" width="24" height="24" />
-        <text x="485" y="430" class="text-base" font-size="16"><tspan font-weight="bold">Ảo Cảnh:</tspan> Cấp {player_data['stygianIndex']} (⏱️ {player_data['stygianSeconds']}s)</text>
+        <text x="485" y="430" class="text-base" font-size="16"><tspan font-weight="bold">Ảo Cảnh:</tspan> {stygianMode[player_data['stygianIndex']-1]} ({player_data['stygianSeconds']}s)</text>
         
         <!-- Footer cập nhật thời gian -->
         <text x="400" y="465" font-family="{FONT_MAIN}" font-size="12" fill="#888888" text-anchor="middle">
