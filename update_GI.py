@@ -147,8 +147,12 @@ def generate_svg(player_data):
     # Code SVG với tọa độ mô phỏng bảng
     FONT_MAIN = "'HYWenHei'"
 
+    SVG_WIDTH = 840
+    SVG_HEIGHT = 400
+    CONTENT_HEIGHT = 400 # Cập nhật đồng bộ với SVG_HEIGHT
+
     svg_content = f"""
-    <svg width="800" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="{SVG_WIDTH}" height="{SVG_HEIGHT}" viewBox="0 0 {SVG_WIDTH} {CONTENT_HEIGHT}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <style type="text/css">
                 @font-face {{
@@ -171,59 +175,59 @@ def generate_svg(player_data):
                 }}
             </style>   
             <clipPath id="avatar-clip">
-                <circle cx="400" cy="80" r="60" />
+                <circle cx="420" cy="65" r="50" />
             </clipPath>
             <clipPath id="card-clip">
-                <rect x="0" y="0" width="800" height="480" rx="15" ry="15" />
+                <rect x="0" y="0" width="{SVG_WIDTH}" height="{CONTENT_HEIGHT}" rx="15" ry="15" />
             </clipPath>
         </defs>
 
         <!-- Khung nền & Namecard -->
         <g clip-path="url(#card-clip)">
-            <image href="{namecard_b64}" x="0" y="0" width="800" height="480" preserveAspectRatio="xMidYMid slice" />
-            <rect x="0" y="0" width="800" height="480" fill="#1c1c24" opacity="0.4" />
+            <image href="{namecard_b64}" x="0" y="0" width="{SVG_WIDTH}" height="{CONTENT_HEIGHT}" preserveAspectRatio="xMidYMid slice" />
+            <rect x="0" y="0" width="{SVG_WIDTH}" height="{CONTENT_HEIGHT}" fill="#1c1c24" opacity="0.25" />
         </g>
 
         <!-- Header: Avatar & Tên -->
-        <image href="{avatar_b64}" x="340" y="20" width="120" height="120" clip-path="url(#avatar-clip)" />
+        <image href="{avatar_b64}" x="370" y="15" width="100" height="100" clip-path="url(#avatar-clip)" />
         
-        <text x="400" y="175" class="text-base" font-size="24" font-weight="bold" text-anchor="middle" letter-spacing="1">
+        <text x="420" y="140" class="text-base" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="1">
             🌠 {player_data['name']}
         </text>
         
-        <text x="400" y="205" class="text-sub" font-size="16" text-anchor="middle" letter-spacing="0.5">
+        <text x="420" y="165" class="text-sub" font-size="15" text-anchor="middle" letter-spacing="0.5">
             "{player_data.get('signature', '') or 'Chưa có chữ ký'}"
         </text>
 
         <!-- Cột 1: Thông tin chung -->
-        <image href="{general_info_icon}" x="90" y="245" width="24" height="24" />
-        <text x="125" y="264" class="text-base" font-size="18" font-weight="bold">Thông tin chung</text>
+        <image href="{general_info_icon}" x="120" y="192" width="24" height="24" />
+        <text x="155" y="210" class="text-base" font-size="18" font-weight="bold">Thông tin chung</text>
 
-        <text x="90" y="310" class="text-base" font-size="16"><tspan font-weight="bold">UID:</tspan> {UID}</text>
-        <text x="90" y="350" class="text-base" font-size="16"><tspan font-weight="bold">Cấp độ:</tspan> AR {player_data['ar']} / WL {player_data['wl']}</text>
-        <text x="90" y="390" class="text-base" font-size="16"><tspan font-weight="bold">Server:</tspan> 🌏 {player_data['region']}</text>
+        <text x="120" y="250" class="text-base" font-size="15"><tspan font-weight="bold">UID:</tspan> {UID}</text>
+        <text x="120" y="285" class="text-base" font-size="15"><tspan font-weight="bold">Cấp độ:</tspan> AR {player_data['ar']} / WL {player_data['wl']}</text>
+        <text x="120" y="320" class="text-base" font-size="15"><tspan font-weight="bold">Server:</tspan> 🌏 {player_data['region']}</text>
 
-        <image href="{companionship_icon}" x="90" y="415" width="24" height="24" />
-        <text x="125" y="433" class="text-base" font-size="16"><tspan font-weight="bold">Thân thiết:</tspan> ❤️ Max {player_data['maxFriendshipCount']}</text>
+        <image href="{companionship_icon}" x="120" y="337" width="24" height="24" />
+        <text x="155" y="355" class="text-base" font-size="15"><tspan font-weight="bold">Thân thiết:</tspan> ❤️ Max {player_data['maxFriendshipCount']}</text>
 
         <!-- Cột 2: Tiến độ thử thách -->
-        <image href="{progress_header_icon}" x="450" y="245" width="24" height="24" />
-        <text x="485" y="264" class="text-base" font-size="18" font-weight="bold">Tiến độ thử thách</text>
+        <image href="{progress_header_icon}" x="460" y="192" width="24" height="24" />
+        <text x="495" y="210" class="text-base" font-size="18" font-weight="bold">Tiến độ thử thách</text>
 
-        <image href="{achievements_icon}" x="450" y="292" width="24" height="24" />
-        <text x="485" y="310" class="text-base" font-size="16"><tspan font-weight="bold">Thành tựu:</tspan> {player_data['achievements']}</text>
+        <image href="{achievements_icon}" x="460" y="232" width="24" height="24" />
+        <text x="495" y="250" class="text-base" font-size="15"><tspan font-weight="bold">Thành tựu:</tspan> {player_data['achievements']}</text>
 
-        <image href="{abyss_icon}" x="450" y="332" width="24" height="24" />
-        <text x="485" y="350" class="text-base" font-size="16"><tspan font-weight="bold">La Hoàn:</tspan> Tầng {player_data['spiralAbyssFloor']}-{player_data['spiralAbyssLevel']} ({player_data['spiralAbyssStar']}★)</text>
+        <image href="{abyss_icon}" x="460" y="267" width="24" height="24" />
+        <text x="495" y="285" class="text-base" font-size="15"><tspan font-weight="bold">La Hoàn:</tspan> Tầng {player_data['spiralAbyssFloor']}-{player_data['spiralAbyssLevel']} ({player_data['spiralAbyssStar']}★)</text>
 
-        <image href="{theater_icon}" x="450" y="372" width="24" height="24" />
-        <text x="485" y="390" class="text-base" font-size="16"><tspan font-weight="bold">Nhà hát:</tspan> Màn {player_data['theaterAct']} ({player_data['theaterStars']}★)</text>
+        <image href="{theater_icon}" x="460" y="302" width="24" height="24" />
+        <text x="495" y="320" class="text-base" font-size="15"><tspan font-weight="bold">Nhà hát:</tspan> Màn {player_data['theaterAct']} ({player_data['theaterStars']}★)</text>
 
-        <image href="{stygian_icon}" x="450" y="412" width="24" height="24" />
-        <text x="485" y="430" class="text-base" font-size="16"><tspan font-weight="bold">Ảo Cảnh:</tspan> {stygianMode[player_data['stygianIndex']-1]} ({player_data['stygianSeconds']}s)</text>
+        <image href="{stygian_icon}" x="460" y="337" width="24" height="24" />
+        <text x="495" y="355" class="text-base" font-size="15"><tspan font-weight="bold">Ảo Cảnh:</tspan> {stygianMode[player_data['stygianIndex']-1]} ({player_data['stygianSeconds']}s)</text>
         
         <!-- Footer cập nhật thời gian -->
-        <text x="400" y="465" font-family="{FONT_MAIN}" font-size="12" fill="#888888" text-anchor="middle">
+        <text x="420" y="385" font-family="{FONT_MAIN}" font-size="12" fill="#888888" text-anchor="middle">
             Cập nhật: {datetime.datetime.now().strftime('%H:%M - %d/%m/%Y')}
         </text>
     </svg>
