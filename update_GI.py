@@ -83,9 +83,9 @@ def get_data():
             91: {"index": 2,"name": "Normal", "total_act": 6},
             97: {"index": 3,"name": "Hard", "total_act": 8},
             93: {"index": 4,"name": "Visionary", "total_act": 10},
-            99: {"index": 5,"name": "Lunar", "total_act": 12}
+            104: {"index": 5,"name": "Lunar", "total_act": 12}
         }
-        mode = MODE_MAP.get(modeIndex, {"name": "Unknown", "total_act": 0})
+        mode = MODE_MAP.get(modeIndex, {"index": 0, "name": "Unknown", "total_act": 0})
         stars = int(theater_data.get("stars", 0))
         
         stygianIndex = int(playerInfo.get("stygianIndex", 0))
