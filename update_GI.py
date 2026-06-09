@@ -79,10 +79,10 @@ def get_data():
         act = int(theater_data.get("act", 0))
         modeIndex = int(theater_data.get("modeIndex", 0))
         MODE_MAP = {
-            95: {"index": 1,"name": "Easy", "total_act": 3},
-            91: {"index": 2,"name": "Normal", "total_act": 6},
-            97: {"index": 3,"name": "Hard", "total_act": 8},
-            93: {"index": 4,"name": "Visionary", "total_act": 10},
+            100: {"index": 1,"name": "Easy", "total_act": 3},
+            101: {"index": 2,"name": "Normal", "total_act": 6},
+            102: {"index": 3,"name": "Hard", "total_act": 8},
+            103: {"index": 4,"name": "Visionary", "total_act": 10},
             104: {"index": 5,"name": "Lunar", "total_act": 12}
         }
         mode = MODE_MAP.get(modeIndex, {"index": 0, "name": "Unknown", "total_act": 0})
