@@ -42,7 +42,7 @@
         </text>
         
         <text x="420" y="165" class="text-sub" font-size="15" text-anchor="middle" letter-spacing="0.5">
-            "- Tumaini -"
+            "- Tumaini đập đồ xấu -"
         </text>
 
         <!-- Cột 1: Thông tin chung -->
@@ -74,6 +74,6 @@
         
         <!-- Footer cập nhật thời gian -->
         <text x="420" y="385" font-family="'HYWenHei'" font-size="12" fill="#888888" text-anchor="middle">
-            Cập nhật: 01:37 - 17/08/2026
+            Cập nhật: 01:32 - 18/08/2026
         </text>
     </svg>
